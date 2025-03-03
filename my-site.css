@@ -1,4 +1,17 @@
 body {
     background-color: #cc0000;
     color: white;
-  }
+}
+
+.top-container{
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid white;
+    height: 70px;
+    width: 100%;
+}
+
+.main-content-container{
+    position: relative;
+    top: 75px;
+}
