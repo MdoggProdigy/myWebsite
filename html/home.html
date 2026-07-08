@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website.</title>
+    <link id="style" rel="stylesheet" href="../css/lightMode.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body onload="startTime()">
+    <header>
+        <h1>This is the website belonging to Mr Luka Marjanović.</h1>
+    </header>
+    <nav>
+        <a href="links.html">Personal links, </a>
+        <a href="calc.html">Calculator.</a>
+    </nav>
+    <section class="clearfix">
+        Welcome!
+        <img src="../images/me.jpg" style="height:250px;width:250px" alt="An image of Mr Luka Marjanović." class="floatRight">
+        <!-- <p><a href="links.html">Personal links.</a></p> -->
+        <!-- <p><a href="calc.html">The Calculator.</a></p> -->
+    </section>
+    <p style="position: absolute; bottom: 0;"><button type="button" onclick="modeButton()">Dark mode/Light mode</button></p>
+    <footer>
+        <h2 id="time"></h2>
+    </footer>
+    <script src="../js/lightModeDarkMode.js"></script>
+    <script src="../js/time.js"></script>
+</body>
+
+</html>

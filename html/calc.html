@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Calculator.</title>
+    <link rel="stylesheet" href="../css/lightMode.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body onload="startTime()">
+    <header>
+        <h1 id="calcHead">This is the Calculator.</h1>
+    </header>
+    <nav>
+        <p><a href="home.html">Home.</a></p>
+    </nav>
+    <section>
+        <p id="readOut"></p>
+        <table>
+            <tr>
+                <td><button id="buttonClr" onclick="pressClr(this.innerHTML)">C</button></td>
+                <td></td>
+                <td></td>
+                <td><button id="buttonDiv" onclick="pressOp(this.innerHTML)">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="button1" onclick="pressN(this.innerHTML)">1</button></td>
+                <td><button id="button2" onclick="pressN(this.innerHTML)">2</button></td>
+                <td><button id="button3" onclick="pressN(this.innerHTML)">3</button></td>
+                <td><button id="buttonMult" onclick="pressOp(this.innerHTML)">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="button4" onclick="pressN(this.innerHTML)">4</button></td>
+                <td><button id="button5" onclick="pressN(this.innerHTML)">5</button></td>
+                <td><button id="button6" onclick="pressN(this.innerHTML)">6</button></td>
+                <td><button id="buttonMin" onclick="pressOp(this.innerHTML)">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="button7" onclick="pressN(this.innerHTML)">7</button></td>
+                <td><button id="button8" onclick="pressN(this.innerHTML)">8</button></td>
+                <td><button id="button9" onclick="pressN(this.innerHTML)">9</button></td>
+                <td><button id="buttonPlus" onclick="pressOp(this.innerHTML)">+</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="button0" onclick="pressN(this.innerHTML)">0</button></td>
+                <td></td>
+                <td><button id="buttonEq" onclick="pressEq(this.innerHTML)">=</button></td>
+            </tr>
+        </table>
+    </section>
+    <p style="position: absolute; bottom: 0;"><button type="button" onclick="modeButton()">Dark mode/Light mode</button></p>
+    <footer>
+        <h2 id="time"></h2>
+    </footer>
+    <script src="../js/calc.js"></script>
+    <script src="../js/time.js"></script>
+</body>
+
+</html>
