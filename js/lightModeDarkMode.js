@@ -1,5 +1,6 @@
 var modeVar = 1;
 const filename = document.location.pathname.split("/").pop();
+console.log(filename)
 
 function modeButton() {
   if (modeVar == 1) {
